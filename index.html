@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <h1 class="title">MATHPLAY</h1>
+        <P class="j-tittle">Ayo Pilih Mau Belajar Apa!</P>
+    </header>
+
+    <!-- Top section -->
+     <div class="top-sec">
+        <div class="choose-sec">
+            <button class="btn circle-btn"><span class="icon">&#9711;</span> LINGKARAN</button>
+           <a href="segitiga.html"><button class="btn triangle-btn">&#9651; SEGITIGA</button></a> 
+        </div>
+
+
+        <div class="rumus-sec">
+            <div class="rumus-title">Rumus Luas Lingkaran</div>
+            <div class="rumus-container"> 
+                <div class="rumus"> L = π × r²</div>
+                <div class="detail">π = 3.14</div>
+                <div class="detail">r = jari-jari lingkaran</div>
+            </div>
+        </div>
+     </div>
+
+     <!-- bottom section -->
+    <div class="bottom-sec">
+      <div class="container-input"> 
+        <div class="j-input">Input</div>
+        <form>
+            <label for="jari-jari-input">Masukkan Nilai Jari-jari (r)</label>
+            <input  class="input-field" id="input-field-lingkaran" type="number" name="jari-jari-input" placeholder="(contoh:15)">
+            <button class="btn calculate-btn"> Hitung</button>
+        </form>
+
+        <div class="container-gambar-lingkaran"></div>
+      </div>
+
+      <div class="steps">
+        <div class="j-langkah">Langkah Perhitungan</div>
+        <div class="langkah-satu"> 
+            <div class="a">1. Tentukan Jari-jari (r)</div>
+            <div class="b" id="r">Nilai r= </div>
+        </div>
+        <div class="langkah-dua">
+            <div class="a">2. Kuadratkan Jari-jari (r)</div>
+            <div class="b" id="r-kuadrat">placeholder</div>
+        </div>
+        <div class="langkah-tiga">
+            <div class="a">3. Kalikan dengan π(3.14)</div>
+            <div class="b" id="hasil-kali">placeholder</div>  
+        </div>
+
+        <div class="hasil-akhir">
+            <div>Hasil Akhir</div>
+            <div class="value-hasil-akhir" id="value-hasil-akhir-lingkaran"></div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>

@@ -27,7 +27,7 @@
             <div class="rumus-title">Rumus Luas Lingkaran</div>
             <div class="rumus-container"> 
                 <div class="rumus"> L = π × r²</div>
-                <div class="detail">π = 3.14</div>
+                <div class="detail">π = 3,14</div>
                 <div class="detail">r = jari-jari lingkaran</div>
             </div>
         </div>
@@ -39,35 +39,48 @@
         <div class="j-input">Input</div>
         <form>
             <label for="jari-jari-input">Masukkan Nilai Jari-jari (r)</label>
-            <input  class="input-field" id="input-field-lingkaran" type="number" name="jari-jari-input" placeholder="(contoh:15)" min="0">
+            <input  class="input-field" id="input-field-lingkaran" type="number" name="jari-jari-input" placeholder="(contoh:15)" >
         </form>
         
-        <button class="btn" id=""> Hitung</button>
+        <button class="btn" id="hitung-btn" type="button"> Hitung</button>
+        
+        <div class="container-gambar-lingkaran">
+            <svg width="100%" height="100%" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+                <circle id="lingkaran-shape" cx="150" cy="100" r="70" fill="#98C9F4" stroke="#0F7CE1" stroke-width="2"/>
+                <line id="lingkaran-garis" x1="150" y1="100" x2="220" y2="100" stroke="#D37121" stroke-width="2" stroke-dasharray="4,4"/>
+                <circle cx="150" cy="100" r="4" fill="#D37121"/>
+                
+                <text id="gambar-text-r" x="178" y="90" font-family="var(--font)" font-size="16" font-weight="bold" fill="var(--text-color-darkblue)" text-anchor="middle">r</text>
+                
+                <path id="panah-garis" d="M 222 90 Q 235 75 252 75" fill="none" stroke="#D37121" stroke-width="2"/>
+                <polyline id="panah-kepala" points="244,68 252,75 244,82" fill="none" stroke="#D37121" stroke-width="2"/>
+                <text id="teks-jari-jari" x="260" y="80" font-family="var(--font)" font-size="18" fill="black">Jari-jari</text>
+            </svg>
+        </div>
 
-        <div class="container-gambar-lingkaran">placeholder</div>
       </div>
 
       <div class="steps">
         <div class="j-langkah">Langkah Perhitungan</div>
         <div class="langkah langkah-satu"> 
             <div class="a">1. Tentukan Jari-jari (r)</div>
-            <div class="b" id="r">Nilai r = </div>
+            <div class="b" id="r">-</div>
         </div>
         <div class="langkah langkah-dua">
             <div class="a">2. Kuadratkan Jari-jari (r)</div>
-            <div class="b" id="r-kuadrat">placeholder</div>
+            <div class="b" id="r-kuadrat">-</div>
         </div>
         <div class="langkah langkah-tiga">
-            <div class="a">3. Kalikan dengan π(3.14)</div>
-            <div class="b" id="hasil-kali">placeholder</div>  
+            <div class="a">3. Kalikan dengan π(3,14)</div>
+            <div class="b" id="hasil-kali">-</div>  
         </div>
 
         <div class="hasil-akhir">
             <div>Hasil Akhir</div>
-            <div class="value-hasil-akhir" id="value-hasil-akhir-lingkaran">placeholder</div>
+            <div class="value-hasil-akhir" id="value-hasil-akhir-lingkaran">-</div>
         </div>
       </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

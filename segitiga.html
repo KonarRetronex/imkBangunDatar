@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATHPLAY</title>
+    <link rel="stylesheet" href="segitigaStyle.css">
+</head>
+
+
+<body>
+
+    <header>
+        <h1 class="title">MATHPLAY</h1>
+        <P class="j-tittle">Ayo Pilih Mau Belajar Apa!</P>
+    </header>
+
+    <!-- Top section -->
+     <div class="top-sec">
+        <div class="choose-sec">
+            <a href="index.html"><button class="btn circle-btn"><span class="icon">&#9711;</span> LINGKARAN</button></a>
+            <button class="btn triangle-btn">&#9651; SEGITIGA</button>
+        </div>
+
+
+        <div class="rumus-sec">
+            <div class="rumus-title">Rumus Luas Segitiga</div>
+            <div class="rumus-container"> 
+                <div class="rumus"> L = ½ × a × t</div>
+                <div class="detail">a = alas</div>
+                <div class="detail">t = tinggi</div>
+            </div>
+        </div>
+     </div>
+
+     <!-- bottom section -->
+    <div class="bottom-sec">
+      <div class="container-input"> 
+        <div class="j-input">Input</div>
+        <div class="form-section">
+            <form>
+                <label for="alas-input">Masukkan Nilai Alas(a)</label>
+                <input  class="input-field" id="input-field-alas-segitiga" type="number" name="alas-input" placeholder="(contoh:8)" >
+            </form>
+            <form>
+                <label for="tinggi-input">Masukkan Nilai Tinggi(t)</label>
+                <input  class="input-field" id="input-field-tinggi-segitiga" type="number" name="tinggi-input" placeholder="(contoh:10)" >
+            </form>
+        </div>
+
+        
+        <button class="btn" id="hitung-btn" type="button"> Hitung</button>
+        
+        <div class="container-gambar-lingkaran">
+        <svg width="100%" height="100%" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+            <path id="segitiga-shape" d="M 150 20 L 70 150 L 230 150 Z" fill="#98C9F4" stroke="#0F7CE1" stroke-width="2"/>
+            
+            <line id="tinggi-garis" x1="150" y1="20" x2="150" y2="150" stroke="#D37121" stroke-width="2" stroke-dasharray="4,4"/>
+            
+            <line id="alas-garis" x1="70" y1="158" x2="230" y2="158" stroke="#D37121" stroke-width="2" stroke-dasharray="4,4"/>
+
+            <text id="text-t" x="158" y="90" font-family="var(--font)" font-size="16" font-weight="bold" fill="var(--text-color-darkblue)">t</text>
+            <text id="text-a" x="150" y="176" font-family="var(--font)" font-size="16" font-weight="bold" fill="var(--text-color-darkblue)" text-anchor="middle">a</text>
+
+            <path id="panah-tinggi-garis" d="M 155 50 Q 165 35 182 35" fill="none" stroke="#D37121" stroke-width="2"/>
+            <polyline id="panah-tinggi-kepala" points="174,29 182,35 174,41" fill="none" stroke="#D37121" stroke-width="2"/>
+            <text id="teks-tinggi" x="190" y="41" font-family="var(--font)" font-size="18" fill="black">tinggi</text>
+
+            <path id="panah-alas-garis" d="M 190 163 Q 200 178 217 178" fill="none" stroke="#D37121" stroke-width="2"/>
+            <polyline id="panah-alas-kepala" points="209,172 217,178 209,184" fill="none" stroke="#D37121" stroke-width="2"/>
+            <text id="teks-alas" x="225" y="183" font-family="var(--font)" font-size="18" fill="black">alas</text>
+        </svg>
+        </div>
+
+      </div>
+
+      <div class="steps">
+        <div class="j-langkah">Langkah Perhitungan</div>
+        <div class="langkah langkah-satu"> 
+            <div class="a">1. Tentukan Alas(a) & Tinggi(t)</div>
+            <div class="b" id="alas-tinggi">-</div>
+        </div>
+        <div class="langkah langkah-dua">
+            <div class="a">2. Kalikan Alas(a) dengan Tinggi(t)</div>
+            <div class="b" id="kalikan-a-t">-</div>
+        </div>
+        <div class="langkah langkah-tiga">
+            <div class="a">3. Kalikan dengan ½</div>
+            <div class="b" id="hasil-kali-segitiga">-</div>  
+        </div>
+
+        <div class="hasil-akhir">
+            <div>Hasil Akhir</div>
+            <div class="value-hasil-akhir" id="value-hasil-akhir-segitiga">-</div>
+        </div>
+      </div>
+    </div>
+    <script src="segitigaScript.js"></script>
+</body>
+</html>

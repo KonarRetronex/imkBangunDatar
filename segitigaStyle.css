@@ -92,6 +92,7 @@ header p{
 }
 
 .choose-sec .btn{
+    flex: 1;
     display: flex;
     width: 29.4375rem;
     height: 2.0625rem;
@@ -116,18 +117,18 @@ header p{
     margin-right: 0.3rem;
 }
 
-.choose-sec .triangle-btn{
+.choose-sec .circle-btn{
     background-color: var(--light-blue);
     color: var(--text-color-darkblue);
 }
 
-.choose-sec .triangle-btn:hover{
+.choose-sec .circle-btn:hover{
     background-color: var(--hover-color);
     color: var(--text-color-white);
     cursor: pointer;
 }
 
-.choose-sec .triangle-btn:active{
+.choose-sec .circle-btn:active{
     background-color: var(--background-color);
     color: var(--text-color-white);
     cursor: grabbing;
@@ -219,6 +220,12 @@ header p{
     justify-content: center; 
 }
 
+.container-input .form-section{
+    display: flex;  
+    gap: 1rem;  
+}
+
+
 .container-input form{
     display: flex;
     flex-direction: column;
@@ -237,7 +244,7 @@ header p{
 }
 
 .container-input form label{
-    font-size: var(--medium-font-size);
+    font-size: var(--small-font-size);
     color: var(--text-color-darkblue);
     font-style: normal;
     font-weight: 700;

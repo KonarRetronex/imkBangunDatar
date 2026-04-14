@@ -250,7 +250,7 @@ header p{
 }
 
 .container-input form label{
-    font-size: var(--small-font-size);
+    font-size: 0.85rem;
     color: var(--text-color-darkblue);
     font-style: normal;
     font-weight: 500;

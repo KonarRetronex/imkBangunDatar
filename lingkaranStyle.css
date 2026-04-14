@@ -20,6 +20,8 @@
     --width: 62.4375rem;
 }
 
+
+
 /* Removes spinners in Chrome, Safari, Edge, and Opera */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -45,7 +47,7 @@ a {
 }
 
 body{
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     background-color: var(--background-color);
     font-family: var(--font);
     display: flex;
@@ -58,6 +60,7 @@ header{
     flex-direction: column;
     align-items: center;
     margin: 0;
+    gap: 0rem;
 }
 
 header h1{
@@ -93,7 +96,6 @@ header p{
 }
 
 .choose-sec .btn{
-    flex: 1;
     display: flex;
     width: 29.4375rem;
     height: 2.0625rem;
@@ -118,18 +120,18 @@ header p{
     margin-right: 0.3rem;
 }
 
-.choose-sec .circle-btn{
+.choose-sec .triangle-btn{
     background-color: var(--light-blue);
     color: var(--text-color-darkblue);
 }
 
-.choose-sec .circle-btn:hover{
+.choose-sec .triangle-btn:hover{
     background-color: var(--hover-color);
     color: var(--text-color-white);
     cursor: pointer;
 }
 
-.choose-sec .circle-btn:active{
+.choose-sec .triangle-btn:active{
     background-color: var(--background-color);
     color: var(--text-color-white);
     cursor: grabbing;
@@ -201,6 +203,7 @@ header p{
     background-color: var(--light-blue);
     border-radius: 0.875rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,10 +211,9 @@ header p{
     padding-top:0.5rem;
 }
 
-.steps{
+.steps {
     justify-content: space-between; 
 }
-
 
 
 .j-input{
@@ -221,12 +223,6 @@ header p{
     display: flex;
     justify-content: center; 
 }
-
-.container-input .form-section{
-    display: flex;  
-    gap: 1rem;  
-}
-
 
 .container-input form{
     display: flex;
@@ -246,7 +242,7 @@ header p{
 }
 
 .container-input form label{
-    font-size: var(--small-font-size);
+    font-size: var(--medium-font-size);
     color: var(--text-color-darkblue);
     font-style: normal;
     font-weight: 700;

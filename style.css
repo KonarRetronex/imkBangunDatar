@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
     --background-color: #122E8C;
@@ -9,7 +10,7 @@
     --text-color-darklightblue: #0D3153CC;
     --hover-color:  #3388d6;
 
-    --font: 'K2D', 'Poppins', sans-serif;
+    --font:  'Poppins','K2D', sans-serif;
 
     --title-font-size: 6rem;
     --normal-font-size: 1.5rem;
@@ -19,18 +20,6 @@
     --width: 62.4375rem;
 }
 
-/* Removes spinners in Chrome, Safari, Edge, and Opera */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Removes spinners in Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-    appearance: textfield;
-}
 
 
 *{
@@ -44,301 +33,73 @@ a {
 }
 
 body{
-    margin-top: 1rem;
-    background-color: var(--background-color);
     font-family: var(--font);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-image: url(asset/homePage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    overflow: hidden;
 }
 
-header{
+.container{
+    margin-top: 14rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    justify-content: center;
 }
 
-header h1{
-    font-size: var(--title-font-size);
+.tittle{
     color: var(--text-color-white);
+    font-size: 7rem;
+    font-family: var(--font);
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 800;
+
+    padding: 0rem;
+    margin: 0rem;
 }
 
-header p{
+.little-title{
+    margin-top: 0;
     color: var(--text-color-white);
     font-size: 2.3125rem;
+    font-family: var(--font);
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0.94rem;
 }
 
-.choose-sec{
-    display: flex;
-    height: 3.6875rem;
-    align-items: center;
-    gap: 1rem;
-    justify-content: space-between;
-
-    border-radius: 0.875rem;
-    background: var(--light-blue);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
-    width: var(--width);
-    height: 3.6875rem;
-}
-
-.choose-sec .btn{
-    display: flex;
-    width: 29.4375rem;
-    height: 2.0625rem;
-    padding: 0.25rem 0 0.1875rem 0;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.4375rem;
+.mulai-btn{
+    padding: 1rem 2rem;
     color: var(--text-color-white);
-    background-color: var(--background-color);
-
-    font-size: var(--medium-font-size);
-    font-style: normal;
-    font-weight: 300;
-    border: none;
-    margin: 1rem;
-}
-
-.choose-sec .icon{
-    font-size: 0.7em; /* Makes it 80% the size of the normal text */
-    vertical-align: middle; /* Keeps it centered vertically with the text */
-    font-weight: 1000;
-    margin-right: 0.3rem;
-}
-
-.choose-sec .triangle-btn{
-    background-color: var(--light-blue);
-    color: var(--text-color-darkblue);
-}
-
-.choose-sec .triangle-btn:hover{
-    background-color: var(--hover-color);
-    color: var(--text-color-white);
-    cursor: pointer;
-}
-
-.choose-sec .triangle-btn:active{
-    background-color: var(--background-color);
-    color: var(--text-color-white);
-    cursor: grabbing;
-}
-
-.rumus-sec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-
-    width: var(--width);
-    height: 10rem;
-
-    border-radius: 0.875rem;
-    background: #0F7CE1;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.rumus-title{
-    font-size: var(--medium-font-size);
-    color: var(--text-color-white);
-    font-style: normal;
-    font-weight: 800;
-    margin: 0.5rem;
-    justify-self: center;
-    align-self: center;
-}
-
-.rumus-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 59.8125rem;
-    height: 6rem;
-    background-color: var(--text-color-white);
-    border-radius: 0.3125rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    justify-items: space-between;
-}
-
-.rumus-container .rumus{
-    font-size: 2rem;
-    color: var(--text-color-darkblue);
-    font-style: normal;
-    font-weight: 800;
-}
-
-.rumus-container .detail{
-    font-size: var(--small-font-size);
-    color: var(--text-color-darkblue);
-    font-style: normal;
-    font-weight: 600;
-}
-
-.bottom-sec{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    width: var(--width);
-}
-
-.container-input, .steps{
-    width: 30.1875rem;
-    height: 27rem;
-    background-color: var(--light-blue);
-    border-radius: 0.875rem;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.container-input, .steps{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.3rem;
-    padding-top:0.5rem;
-}
-
-
-
-.j-input{
-    width: 100%;
-    font-size: 1.875rem;;
-    color: var(--text-color-darkblue);
-    display: flex;
-    justify-content: center; 
-}
-
-.container-input form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.container-input form input{
-    padding: 0.5rem;
-    width: 100%;
-    border-radius: 0.375rem;
-    border: 1px solid var(--Color, rgba(96, 178, 255, 0.80));
-    background: var(--text-color-white);
-    font-size: var(--small-font-size);
-    font-style: italic;
-    
-}
-
-.container-input form label{
-    font-size: var(--medium-font-size);
-    color: var(--text-color-darkblue);
+    font-family: var(--font);
+    font-size: 2.3125rem;
     font-style: normal;
     font-weight: 700;
-    text-align: left;
-}
 
-.container-input button{
-    width: 6.8125rem;
-    height: 2.25rem;
-    border-radius: 0.625rem;
-    background: #0E62AF;
+    width: 17.25rem;
+    height: 6rem;
+
+    border-radius: 1.875rem;
+    background: #4F9AE0;
+    box-shadow: 0 15px 4px 0 #182F77;
     border: none;
-    margin-top:0.5rem;
-    margin-bottom: 1rem;
-    padding: 0.3rem;
-    color: var(--text-color-white);
-    font-size: var(--medium-font-size);
-    font-style: bold;
-    font-weight: 400;
-    line-height: normal;
+
+    margin-top: 1.56rem;
 }
 
-.container-input button:hover{
-    background-color: var(--hover-color);
+.mulai-btn:hover{
+    background: var(--hover-color);
     cursor: pointer;
 }
 
-.container-input button:active{
-    background-color: #0E62AF;
+.mulai-btn:active{
+    background: #4F9AE0;
     cursor: grabbing;
-}
-
-.container-gambar-lingkaran{
-    width: 100%;
-    height: 15rem;
-    background-color: var(--text-color-white);
-    border-radius: 0.875rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.j-langkah {
-    width: 100%;
-    font-size: var(--normal-font-size);
-    color: var(--text-color-darkblue);
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 0.5rem ;
-    margin-top:0;
-    padding-top: 0rem;
-    font-weight: 400;
-}
-
-.langkah{
-    width: 28.875rem;
-    height: 4.6875rem;
-    background-color: var(--text-color-white);
-    border-radius: 0.875rem;
-    padding: 0.5rem 1rem 0.5rem 1rem; 
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    align-items: left;
-}
-
-.steps .a{
-    font-size: var(--medium-font-size);
-    color: var(--text-color-darkblue);
-    font-style: normal;
-    font-weight: 400;
-}
-
-.steps .b{
-    font-size: var(--small-font-size);
-    color: var(--text-color-darklightblue);
-    font-style: normal;
-    font-weight: 600;
-    margin-left: 1.3rem;
-}
-
-.langkah-dua{
-    background-color: var(--light-blue);
-}
-
-.hasil-akhir{
-    width: 28.875rem;
-    height: 4.0625rem;
-    padding: 1rem 1.69rem 1rem 1.69rem;
-    display: flex;
-    justify-content: Space-between;
-    align-items: center;
-    border-radius: 0.375rem;
-    background: var(--background-color);
-
-    color: var(--text-color-white);
-    font-size: var(--normal-font-size);
-    font-style: normal;
-    font-weight: 400;
-
-    margin: 6.5rem 2rem 1rem 2rem;
 }

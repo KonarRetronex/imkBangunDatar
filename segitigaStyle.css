@@ -51,6 +51,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
+    min-height: 100vh;
 }
 
 header{
@@ -197,7 +199,7 @@ header p{
 
 .container-input, .steps{
     width: 30.1875rem;
-    height: 27rem;
+    /* height: 27rem; */
     background-color: var(--light-blue);
     border-radius: 0.875rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -206,6 +208,8 @@ header p{
     align-items: center;
     padding: 1.3rem;
     padding-top:0.5rem;
+
+
 }
 
 .steps{

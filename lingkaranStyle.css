@@ -53,6 +53,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-bottom: 2rem;
+    min-height: 100vh;
 }
 
 header{
@@ -209,6 +212,7 @@ header p{
     align-items: center;
     padding: 1.3rem;
     padding-top:0.5rem;
+
 }
 
 .steps {

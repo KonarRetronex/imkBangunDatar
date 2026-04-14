@@ -253,7 +253,7 @@ header p{
     font-size: var(--small-font-size);
     color: var(--text-color-darkblue);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     text-align: left;
 }
 
